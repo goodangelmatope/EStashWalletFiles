@@ -1,0 +1,38 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Body>
+		<p272:ViewBillPaymentDetailsRequest xmlns:p272="http://barclays.com/bem/ViewBillPaymentDetails">
+			<p272:RequestHeader>
+				<ConsumerContext p56:RESP_POPULATE_FLAG="0" xmlns:p56="http://barclays.com/bem/BEMServiceHeader">
+					<CountryCode>ZM</CountryCode>
+					<SystemID>MNO</SystemID>
+					<BusinessID>ZMBRB</BusinessID>
+					<BranchCode>096</BranchCode>
+					<TerminalID>101</TerminalID>
+				</ConsumerContext>
+				<ServiceContext>
+					<ServiceID>ViewBillPaymentDetails</ServiceID>
+					<ConsumerUniqueRefNo>RVSL-436119007857</ConsumerUniqueRefNo>
+					<OriginalConsumerUniqueRefNo>18218887113061</OriginalConsumerUniqueRefNo>
+					<ServiceDateTime>2024-12-26T17:21:11.393Z</ServiceDateTime>
+					<ServiceVersionNo>7.0.4</ServiceVersionNo>
+					<OverrideRequestFlag>false</OverrideRequestFlag>
+				</ServiceContext>
+				<BankUserContext p56:RESP_POPULATE_FLAG="1" xmlns:p56="http://barclays.com/bem/BEMServiceHeader">
+					<StaffType>Regular</StaffType>
+					<StaffID>IFE</StaffID>
+					<AuthorizerID>Z00019789</AuthorizerID>
+				</BankUserContext>
+				<OverrideList>
+					<OverrideDetails>
+						<Code>W2B</Code>
+						<Details>mWallet to Bank</Details>
+						<Source>Cellulant</Source>
+					</OverrideDetails>
+				</OverrideList>
+			</p272:RequestHeader>
+			<p272:ViewBillPaymentInfo>
+				<p272:TransactionReferenceNumber>436119007857</p272:TransactionReferenceNumber>
+			</p272:ViewBillPaymentInfo>
+		</p272:ViewBillPaymentDetailsRequest>
+	</soapenv:Body>
+</soapenv:Envelope>
